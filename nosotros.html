@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Nosotros / Estudio Cafe Te</title>
+        <link rel="stylesheet" href="./estilos/estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Estudio Cafe Te</a>
+            <a href="menu.html">Menú</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="vos.html">Vos</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <br>
+        <section class="div2">
+            <div class="mitad1">
+                <img id="ilustracion" src="./imagenes/ilustracion.png">  
+            </div>
+            <div class="mitad2">
+                <h6>¿Quiénes somos?</h6>
+                <p>¿Un bar en un estudio de arquitectura o un estudio de arquitectura en un bar?
+                    ¡Combinamos lo mejor del diseño con la cafetería!
+                    Somos un estudio de arquitectura y mobiliario + cafetería de especialidad, ¿qué esperas para venir a conocernos?</p>
+            </div>
+        </section>
+        <section class="div3">
+            <div class="contenido-div3">
+                <img src="./imagenes/telefono.png"> 
+                <div class="cajita"> 
+                    <h7>Contacto</h7>
+                    <p>+54 911 24079825 <br> info@estudiote.com.ar</p>
+                </div>
+            </div>
+            <div class="contenido-div3">
+                <img src="./imagenes/reloj.png"> 
+                <div class="cajita"> 
+                    <h7>Horarios</h7>
+                    <p> Lun a vier de 9:00 a 20:00hs <br> Sábados de 10:30 a 20:00hs </p>
+                </div>
+            </div>
+            <div class="contenido-div3">
+                <img src="./imagenes/ubicacion.png"> 
+                <div class="cajita"> 
+                    <h7>Ubicación</h7>
+                    <p> Thames 937, CABA </p>
+                </div>
+            </div>
+        </section>
+        <section id="mapa"> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6568.922438530407!2d-58.4474653064209!3d-34.59249700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb56911ca728f%3A0x240396e4332e1e02!2sestudio.te!5e0!3m2!1ses!2sar!4v1685027542039!5m2!1ses!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <footer>
+            <div class="contenido-footer"> Estudio Cafe.Te</div>
+            <div class="contenido-footer">Copyright © 2023 Estudio Cafe.Te </div>
+            <div class="contenido-footer">
+                <a href="https://www.instagram.com/estudiote.cafe/"> <img class="iconos" src="./imagenes/redes1.png"></a>
+                <a href="https://api.whatsapp.com/send?phone=541124079825&text="><img class="iconos" src="./imagenes/redes2.png"></a>
+                <a href="mailto:info@estudiote.com.ar"><img class="iconos" src="./imagenes/redes3.png"></a>
+            </div>
+        </footer>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+    </body>
+</html>

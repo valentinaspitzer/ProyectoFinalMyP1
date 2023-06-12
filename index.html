@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Estudio Cafe Te</title>
+        <link rel="stylesheet" href="./estilos/estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Estudio Cafe Te</a>
+            <a href="menu.html">Menú</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="vos.html">Vos</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <section id="ppal">
+                <h1 id="arq">Arquitectura, <br> Mobiliario <br> & Café </h1>
+                <div id="contenedor-imagen1">
+                    <img id="imagen1" src="./imagenes/imagen1.png">
+                </div>
+        </section>
+        <section id="caracteristicas">
+            <div id="contenido-cara"> 
+                <h2>¡Conocenos!<br>Somos tu nuevo espacio de estudio/trabajo favorito</h2>
+                <div class="contenedor-columna">
+                    <div class="columna">
+                        <h3>Ambiente<br>silencioso</h3>
+                        <img class="vector" src="./imagenes/icono1.png">
+                    </div>
+                    <div class="columna">
+                        <h3>Mesas de<br>uso común</h3>
+                        <img class="vector" src="./imagenes/icono2.png">
+                    </div>
+                    <div class="columna">
+                        <h3>Salas<br>privadas</h3>
+                        <img class="vector" src="./imagenes/icono3.png">
+                    </div>
+                    <div class="columna">
+                        <h3>Café y<br>pastelería</h3>
+                        <img class="vector" src="./imagenes/icono4.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="delicias">
+            <h4>¡Nuestras delicias!</h4>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="./imagenes/slider1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                  <img src="./imagenes/slider2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                  <img src="./imagenes/slider3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./imagenes/slider4.jpg" style="width:100%">
+                  </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
+            </div>
+        </section>
+        <section id="cuadrados">
+            <div class="izquierda">
+                <div class="contenedor-cuadrados"> 
+                    <h5>Take Away</h5>
+                    <p>¿Estás apurado pero necesitas tu dosis diaria de café?
+                        Hacé tu pedido online y elegí a qué hora lo retiras. ¡Lo tendremos listo para cuando llegues! </p>
+                    <form action="menu.html">
+                        <button class="boton">Pedí y retirá</button>
+                    </form>
+                </div>
+            </div>
+            <div class="derecha">
+                <div class="contenedor-cuadrados">
+                    <h5>¡Comprá y ganá!</h5>
+                    <p>¡Recompensamos tu lealtad! 
+                        Acumulá puntos con cada compra y accedé a beneficios y promociones únicas. ¿Qué esperas?</p>
+                    <form action="vos.html">
+                        <button class="boton">Mis puntos</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="contenido-footer"> Estudio Cafe.Te</div>
+            <div class="contenido-footer">Copyright © 2023 Estudio Cafe.Te </div>
+            <div class="contenido-footer">
+                <a href="https://www.instagram.com/estudiote.cafe/"> <img class="iconos" src="./imagenes/redes1.png"></a>
+                <a href="https://api.whatsapp.com/send?phone=541124079825&text="><img class="iconos" src="./imagenes/redes2.png"></a>
+                <a href="mailto:info@estudiote.com.ar"><img class="iconos" src="./imagenes/redes3.png"></a>
+            </div>
+        </footer>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
+         <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+    </body>
+</html>

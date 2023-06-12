@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Vos / Estudio Cafe Te</title>
+        <link rel="stylesheet" href="./estilos/estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Estudio Cafe Te</a>
+            <a href="menu.html">Menú</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="vos.html">Vos</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <br>
+        <section id="contenedor-grande">
+            <div class="contenedor-chico">
+                <div class="hola">
+                    <h6>¡Hola, <br>Valen!</h6>
+                </div>
+                <div class="silla"> 
+                    <img id="img-silla" src="./imagenes/silla.png">
+                </div>
+            </div>
+            <div class="contenedor-chico">
+                <div class="puntos">
+                    <img id="img-puntos" src="./imagenes/puntos.png">
+                </div>
+                <div class="datos">
+                    <h5>Datos personales</h5>
+                    <div class="dato">
+                        <p class="pregunta">Nombre</p>
+                        <p class="respuesta">Valentina Spitzer</p>
+                    </div>
+                    <div class="dato">
+                        <p class="pregunta">Mail</p>
+                        <p class="respuesta">valenspitzer01@gmail.com</p>
+                    </div>
+                    <div class="dato">
+                        <p class="pregunta">Contraseña</p>
+                        <p class="respuesta">*********</p>
+                    </div>
+                    <form action="index.html">
+                        <button class="boton">Cerrar sesión</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="contenido-footer"> Estudio Cafe.Te</div>
+            <div class="contenido-footer">Copyright © 2023 Estudio Cafe.Te </div>
+            <div class="contenido-footer">
+                <a href="https://www.instagram.com/estudiote.cafe/"> <img class="iconos" src="./imagenes/redes1.png"></a>
+                <a href="https://api.whatsapp.com/send?phone=541124079825&text="><img class="iconos" src="./imagenes/redes2.png"></a>
+                <a href="mailto:info@estudiote.com.ar"><img class="iconos" src="./imagenes/redes3.png"></a>
+            </div>
+        </footer>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+    </body>
+</html>
